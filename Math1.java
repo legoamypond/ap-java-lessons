@@ -18,6 +18,11 @@ class Calculator{
 
     }
 
+    //method overiding 
+    double divide(double a, double b){
+        return a / b;
+    }
+
     int modulo(int a, int b){
         return a%b;
     }
@@ -31,6 +36,7 @@ public class Math1 {
         System.out.println(calc.multiply(10,5));
         System.out.println(calc.divide(10,5));
         System.out.println(calc.modulo(10,5));
+        System.out.println(calc.divide(10.7,5.3));
 
     }
 

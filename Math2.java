@@ -1,20 +1,25 @@
 // lesson on accumulation and increment, decrement
 
 class ScoreBoard {
-
+    static final String GAME_NAME = "Super Mario";
     int playerXP = 0;
     int playerLevel = 0;
+    int health = 0;
+
+    void getName(){
+        System.out.println(GAME_NAME);
+    }
 
     void gainXP(int amount) {
         playerXP = playerXP + amount; // accumulation, long way of doing it.
     }
 
     void heal() {
-        playerXP += 50; //compound addition, compound accumulation
+        health += 50; //compound addition, compound accumulation
     }
 
     void damage() {
-        playerXP -= 10; // compound subtraction
+        health -= 10; // compound subtraction
     }
 
     // note you can also *=, /=, and %= */

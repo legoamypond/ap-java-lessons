@@ -5,12 +5,20 @@ class Calculator{
         return a + b;
     }
 
+    double add(double a, double b){
+        return a + b;
+    }
+
     int subtract(int a, int b){
         return a - b;
     }
     int multiply(int a, int b){
         return a*b;
 
+    }
+
+    int multiply(int a, int b, int c){
+        return a*b*c;
     }
 
     int divide(int a, int b){
@@ -37,6 +45,8 @@ public class Math1 {
         System.out.println(calc.divide(10,5));
         System.out.println(calc.modulo(10,5));
         System.out.println(calc.divide(10.7,5.3));
+        System.out.println(calc.add(10.3,11.5));
+        System.out.println(calc.multiply(5,2,3));
 
     }
 

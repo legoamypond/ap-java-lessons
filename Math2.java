@@ -2,9 +2,14 @@
 
 class ScoreBoard {
     static final String GAME_NAME = "Super Mario";
+    public String User_Name;
     int playerXP = 0;
     int playerLevel = 0;
     int health = 0;
+
+    public ScoreBoard(String User_Name){
+        this.User_Name = User_Name;
+    }
 
     void getName(){
         System.out.println(GAME_NAME);
@@ -12,6 +17,7 @@ class ScoreBoard {
 
     void gainXP(int amount) {
         playerXP = playerXP + amount; // accumulation, long way of doing it.
+        System.out.println(User_Name + " has " + amount + " xp");
     }
 
     void heal() {
@@ -37,8 +43,8 @@ class ScoreBoard {
 public class Math2 {
     public static void main(String[] args){
 
-        ScoreBoard player1 = new ScoreBoard();
-        ScoreBoard player2 = new ScoreBoard();
+        ScoreBoard player1 = new ScoreBoard("Alex");
+        ScoreBoard player2 = new ScoreBoard("Jeff");
 
         player1.gainXP(100);
         player1.gainXP(200);

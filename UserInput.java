@@ -52,6 +52,13 @@ public class UserInput {
     System.out.println("Enter a diameter as a double ");
     double diameter = Double.parseDouble(input.nextLine());
     double radius = diameter/2;
+
+    System.out.println(radius);
+    double area = Math.PI*Math.pow(radius,2);
+    System.out.println(area);
+
+
+
      
 
 

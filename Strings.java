@@ -36,5 +36,17 @@ public class Strings {
          System.out.println("Full quote "+ quote);
          System.out.println("Substring1 "+ result1);
          System.out.println("Full quote "+ result2 );
+
+         // MORE BUILT IN METHODS
+        String character = "spOngEBOB SQuarePaNts";
+        System.out.println("Uppercase: " + character.toUpperCase());
+        System.out.println("Lowercase: " + character.toLowerCase());
+        System.out.println("Contains 'Squidward'? " + character.contains("Squidward"));
+        System.out.println("Replaced name: " + character.replace("spOngEBOB", "sqUidWaRD"));
+
+        // ESCAPED CHARACTERS
+
+        System.out.println("Name:\tAda Lovelace\nRole:\tFirst Programmer Ever\nYear:\t1843");
+
     }
 }

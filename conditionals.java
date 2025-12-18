@@ -82,7 +82,6 @@ public class conditionals {
 
 
 
-String password = "badPassword";
 System.out.println("Enter Password");
 String answer = input.nextLine();
 if(answer.equals("badPassword")){

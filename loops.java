@@ -5,7 +5,7 @@ public static void main(String[] args) {
          // break
         // continue
         // return
-        /* 
+        
         for (int i = 0; i < 5; i += 1) {
             for (int j = 0; j < 5; j++) {
                 
@@ -28,9 +28,9 @@ public static void main(String[] args) {
             }
             System.out.println(z);
         }
-                */
+                
     
-    /*for (int i = 0; i<100; i++){
+    for (int i = 0; i<100; i++){
         if(i % 5 == 0){
             if(i % 3 == 0){
              System.out.println("Foobar");
@@ -45,14 +45,31 @@ public static void main(String[] args) {
             }
         }
         }  */
-
-    Boolean isWon = false; 
+ 
+    Boolean islost = true;
+    int answer = 3; 
     System.out.println("Enter a number: 1-3");
-    while(isWon){
-        int num = input.nextLine();
-        
+    while(islost){
+        int num = Integer.parseInt(input.nextLine());
+        if (answer == num){
+            System.out.println("Correct!");
+            islost = false;
+        }
+        else{
+            System.out.println("Wrong");
+        }  
     } 
-       
+    
+   /* 
+    for(int f=1; f<13; f++){
+        for (int n=1; n<13; n++){
+            System.out.print(n+"  ");   
+    }
+        for(int s=1; s<13; s++){
+            System.out.print();
+        }
+    }
+*/
 }
 }
 

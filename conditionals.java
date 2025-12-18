@@ -1,6 +1,9 @@
+import java.util.Scanner;
 public class conditionals {
     public static void main(String[] args) {
 
+        Scanner input = new Scanner(System.in);
+        
             //Basic Booleans
             System.out.println(" Double equals: " + (3 == 2));
             System.out.println("String equivalent: " + "Hello".equals("Helloz"));
@@ -75,6 +78,48 @@ public class conditionals {
 // Ask the user for an integer grade (0-100).
 // Print a letter grade: A, B, C, D, F
 // Remember to parse the string to integer. 
+
+
+
+
+String password = "badPassword";
+System.out.println("Enter Password");
+String answer = input.nextLine();
+if(answer.equals("badPassword")){
+    System.out.println("Acsess granted");
+}
+else{
+    System.out.println("Acsess denied");
+}
+
+
+
+System.out.println("Enter a number");
+int userInt = Integer.parseInt(input.nextLine());
+if(userInt % 2 == 0){
+    System.out.println("Even");
+}
+else{
+    System.out.println("odd");
+}
+
+
+System.out.println("Enter a number grade 1-100");
+int userGrade = Integer.parseInt(input.nextLine());
+if(userGrade >= 90){
+    System.out.println("A");
+}
+else if(userGrade>= 80){
+    System.out.println("B");
+}
+else if(userGrade>= 70){
+    System.out.println("C");
+}
+else if(userGrade>= 60){
+    System.out.println("D");
+}
+else if(userGrade <= 60){
+    System.out.println("F");
     }
-    
+}
 }

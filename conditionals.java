@@ -120,5 +120,6 @@ else if(userGrade>= 60){
 else if(userGrade <= 60){
     System.out.println("F");
     }
-}
+input.close();
+} 
 }

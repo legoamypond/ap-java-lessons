@@ -30,9 +30,9 @@ public static void main(String[] args) {
         }
                 
     
-    for (int i = 0; i<100; i++){
-        if(i % 5 == 0){
-            if(i % 3 == 0){
+    for (int j = 0; j<100; j++){
+        if(j % 5 == 0){
+            if(j % 3 == 0){
              System.out.println("Foobar");
             }
             else{
@@ -40,11 +40,11 @@ public static void main(String[] args) {
             }
         }
         else{
-            if(i % 3 == 0){
+            if(j % 3 == 0){
                 System.out.println("bar");
             }
         }
-        }  */
+        }  
  
     Boolean islost = true;
     int answer = 3; 
@@ -70,6 +70,7 @@ public static void main(String[] args) {
         }
     }
 */
+input.close();;
 }
 }
 

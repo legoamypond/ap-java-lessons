@@ -17,5 +17,5 @@ public class ComputeAvg {
     }
     avg = (sum/10);
     System.out.println(avg);
-    
+    input.close();
 }}

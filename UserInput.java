@@ -57,7 +57,7 @@ public class UserInput {
     double area = Math.PI*Math.pow(radius,2);
     System.out.println(area);
 
-
+    input.close();
 
      
 

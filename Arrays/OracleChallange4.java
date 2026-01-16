@@ -1,5 +1,6 @@
-public class OracleChallange4 {
-    public static void main(String[] args) {
+
+//public class OracleChallange4 {
+    //public static void main(String[] args) {
         //double winners[] = new double[18];
         
         //int first_array[] = {2,3,5,7,11,13,17,19};
@@ -17,9 +18,10 @@ public class OracleChallange4 {
             for(int j = 0; j<32; j++){
                 System.out.println(array[i][j]);
             }
-        */
+    
         }
 
 
     }
 }
+    */

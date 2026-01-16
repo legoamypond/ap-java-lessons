@@ -29,23 +29,34 @@ public class TicTacToeChallange {
          }
         }
        while(oCount >= 6){
-        while(true){
             int row = random.nextInt(4);
             int collum = random.nextInt(4); 
             if(ticTacBoard[row][collum].contentEquals("o")){
                 ticTacBoard[row][collum] = "x";
                 oCount -= 1;
             }
-        }
        }
-        /*//Rows
+
+       boolean win = false; 
+        while(win == false){
+            //row    
         for(int row = 0; row<3; row++){
-            System.out.println();
-            System.out.println(ticTacBoard[row][row]);
-            if(ticTacBoard[row][row] == "x"){
-                System.out.println("Yep");
+            if((ticTacBoard[row][0].equals("0")) && (ticTacBoard[row][1].equals("o")) && (ticTacBoard[row][2].equals("o"))){
+                System.out.println("o wins!");
+                break;
             }
-    
-        }*/
+            else if((ticTacBoard[row][0].equals("x")) && (ticTacBoard[row][1].equals("x")) && (ticTacBoard[row][2].equals("x"))){
+                System.out.println("X wins!");
+                break;
+            }
+            else{
+                System.out.println("cat");
+                break;
+            }
+        }
+
+        break;
+        }
+        
     }
 }

@@ -49,14 +49,30 @@ public class TicTacToeChallange {
                 System.out.println("X wins!");
                 break;
             }
-            else{
-                System.out.println("cat");
+        
+            }
+            for(int collum = 0; collum<3; collum++){
+                if((ticTacBoard[0][collum].equals("o")) && (ticTacBoard[1][collum].equals("o")) && (ticTacBoard[2][collum].equals("o"))){
+                System.out.println("o wins!");
                 break;
             }
+                else if((ticTacBoard[0][collum].equals("x")) && (ticTacBoard[1][collum].equals("x")) && (ticTacBoard[2][collum].equals("x"))){
+                System.out.println("X wins!");
+                break;
+            }
+
+            }
+            if((ticTacBoard[0][0].equals("o") && ticTacBoard[1][1].equals("o") && ticTacBoard[0][0].equals("o")) || (ticTacBoard[2][0].equals("o") && ticTacBoard[1][0].equals("o") && ticTacBoard[0][0].equals("o") )){
+                System.out.println("o wins");
+                break;
+            }
+            else if((ticTacBoard[0][0].equals("x") && ticTacBoard[1][1].equals("x") && ticTacBoard[0][0].equals("x")) || (ticTacBoard[2][0].equals("x") && ticTacBoard[1][0].equals("x") && ticTacBoard[0][0].equals("x") )) {
+                System.out.println("x wins");
+            }
+            break;
         }
 
-        break;
+        
         }
         
     }
-}

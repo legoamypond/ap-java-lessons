@@ -30,6 +30,22 @@ public class GetSetTester {
         player1.setRank(rank1);
         System.out.println(player1.getRank());
 
+        String checkRank = player1.getRank();
+
+        if (checkRank.equals("Stone")){
+            System.out.println("Get good lol");
+        }
+        if (checkRank.equals("Iorn")){
+            System.out.println("Get more good lol");
+        }
+        if (checkRank.equals("Gold")){
+            System.out.println("Getting better");
+        }
+        if (checkRank.equals("Dimond")){
+            System.out.println("Good job");
+        }
+
+
         input.close();
     }
 }

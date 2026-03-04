@@ -4,6 +4,8 @@ import java.util.Collections;
 // https://www.w3schools.com/java/java_ref_collections.asp
 import java.util.Arrays;
 
+import java.util.Scanner;
+
 public class ArrayListDemo {
 
 	public static void main(String[] args) {
@@ -72,7 +74,40 @@ public class ArrayListDemo {
 		// To clear all elements from a list do
 		list.clear();
 		System.out.println("Cleared list: " + list);
+		
+		//Challenge 3 bellow
+		ArrayList<String> shoppingList = new ArrayList<String>();
+		Scanner input = new Scanner(System.in);
 
+		shoppingList.add("apples");
+		shoppingList.add("soup");
+		shoppingList.add("pizza");
+		shoppingList.add("cookies");
+
+		boolean check = true; 
+		while (check == true) {
+			System.out.println("You wanna check? Y or N");
+			String userCheck = input.nextLine();
+			if (userCheck.equals("Y")){
+				System.out.print("What item?");
+				String checkName = input.nextLine();
+				if ((shoppingList.contains(checkName)) == true) {
+					System.out.println(shoppingList.indexOf(checkName));
+				}
+				else{
+					System.out.println("adding to list");
+					shoppingList.add(checkName);
+					System.out.println(shoppingList);
+				}
+			}
+			else{
+				check = false;
+			}
+			
+		}
+
+
+		input.close();
 	}}
 /*  Filter out all odd numbers from a list
 		// Create a arraylist with 10 random numbs
@@ -99,6 +134,29 @@ public class ArrayListDemo {
 		// make a guest list that allows the user to enter names
 		// if the name exist tell the use "this person is invited"
 		// continue until you type exit
+
+		ArrayList<String> nameList = new ArrayList<String>();
+		Scanner input = new Scanner(System.in);
+
+		nameList.add("Cassy");
+		nameList.add("Margret");
+		nameList.add("Lilly");
+		nameList.add("Ginny");
+		System.out.println(nameList);
+		boolean check = true; 
+		while (check == true) {
+			System.out.println("You wanna check? Y or N");
+			String userCheck = input.nextLine();
+			if (userCheck.equals("Y")){
+				System.out.print("What name?");
+				String checkName = input.nextLine();
+				System.out.println(nameList.contains(checkName));
+			}
+			else{
+				check = false;
+			}
+			
+		}
 
 		// Create a list of grocery items
 		// if the user types in a food item print its index
